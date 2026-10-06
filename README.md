@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Unified-Software-Development-Platform?style=social" alt="GitHub stars"/>
+  <img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Unified-Software-Development-Platform?style=social" alt="GitHub_Stars"/>
   <img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Unified-Software-Development-Platform?color=blue" alt="License"/>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -53,7 +53,7 @@ Below is a curated comparison of leading commercial SaaS products, enterprise ma
 
 ## 🔓 Open-Source Cloud Infrastructure & APIs
 
-Curated open-source projects, Infrastructure-as-Code engines, Kubernetes operators, and policy engines ranked by **GitHub Star Count (Descending)**:
+Curated open-source projects, Infrastructure-as-Code engines, Kubernetes operators, and policy engines ranked by **GitHub Stars_Count (Descending)**:
 
 1. **[Terraform](https://github.com/hashicorp/terraform)** [<img src="https://img.shields.io/github/stars/hashicorp/terraform?style=social&color=white" alt="HashiCorp Terraform Stars"/>](https://github.com/hashicorp/terraform/stargazers)  
    ⚡ **The de facto multi-cloud IaC standard** (MPL-2.0). Declarative HCL configuration covering 3,000+ cloud providers. 🛠️
