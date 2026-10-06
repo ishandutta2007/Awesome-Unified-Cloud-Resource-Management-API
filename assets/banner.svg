@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <!-- Pulsing animation for dynamic nodes -->
+    <style>
+      .glow-pulse {
+        animation: pulse 3s infinite alternate ease-in-out;
+      }
+      .float-card {
+        animation: float 4s infinite alternate ease-in-out;
+      }
+      .dash-flow {
+        stroke-dasharray: 8 8;
+        animation: dash 20s linear infinite;
+      }
+      @keyframes pulse {
+        0% { opacity: 0.3; transform: scale(0.98); }
+        100% { opacity: 0.8; transform: scale(1.02); }
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-10px); }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -100; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Background Animated Network Lines (Dynamic Aspect in Background) -->
+  <g opacity="0.35">
+    <line x1="100" y1="50" x2="300" y2="120" stroke="#38bdf8" stroke-width="1.5" class="dash-flow"/>
+    <line x1="300" y1="120" x2="500" y2="60" stroke="#818cf8" stroke-width="1.5" class="dash-flow"/>
+    <line x1="500" y1="60" x2="800" y2="150" stroke="#c084fc" stroke-width="1.5" class="dash-flow"/>
+    <line x1="800" y1="150" x2="1100" y2="80" stroke="#38bdf8" stroke-width="1.5" class="dash-flow"/>
+    <line x1="200" y1="250" x2="450" y2="200" stroke="#818cf8" stroke-width="1.5" class="dash-flow"/>
+    <line x1="450" y1="200" x2="950" y2="240" stroke="#c084fc" stroke-width="1.5" class="dash-flow"/>
+
+    <!-- Background glowing nodes -->
+    <circle cx="300" cy="120" r="6" fill="#38bdf8" class="glow-pulse"/>
+    <circle cx="500" cy="60" r="8" fill="#818cf8" class="glow-pulse"/>
+    <circle cx="800" cy="150" r="5" fill="#c084fc" class="glow-pulse"/>
+    <circle cx="450" cy="200" r="7" fill="#38bdf8" class="glow-pulse"/>
+  </g>
+
+  <!-- Decorative Cloud Tech Cards (Background / Side elements) -->
+  <g class="float-card" opacity="0.4">
+    <rect x="50" y="160" width="140" height="60" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1"/>
+    <text x="70" y="195" fill="#38bdf8" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">☁️ AWS / GCP</text>
+
+    <rect x="1010" y="160" width="140" height="60" rx="8" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1"/>
+    <text x="1025" y="195" fill="#c084fc" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">⚙️ IaC / K8s</text>
+  </g>
+
+  <!-- Foreground Title & Subtitle (CLEAR & UNHEEDED) -->
+  <g text-anchor="middle">
+    <!-- Main Title -->
+    <text x="600" y="125" fill="url(#textGrad)" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="42" font-weight="900" letter-spacing="1">
+      Awesome Unified Cloud Resource Management API
+    </text>
+
+    <!-- Subtitle / Description -->
+    <text x="600" y="175" fill="#e2e8f0" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="18" font-weight="500" letter-spacing="0.5">
+      Curated Ecosystem of Multi-Cloud Provisioning, IaC Control Planes &amp; Unified Governance APIs
+    </text>
+
+    <!-- Category Pills -->
+    <g transform="translate(370, 210)">
+      <rect x="0" y="0" width="130" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+      <text x="65" y="21" fill="#38bdf8" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600">☁️ Multi-Cloud</text>
+
+      <rect x="150" y="0" width="150" height="32" rx="16" fill="#1e293b" stroke="#818cf8" stroke-width="1"/>
+      <text x="225" y="21" fill="#818cf8" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600">🛠️ IaC &amp; Control Planes</text>
+
+      <rect x="320" y="0" width="140" height="32" rx="16" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+      <text x="390" y="21" fill="#c084fc" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600">🔒 Governance &amp; OPA</text>
+    </g>
+  </g>
+</svg>
